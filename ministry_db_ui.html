@@ -1,0 +1,63 @@
+<HTML>
+  <style>
+  body {
+      background-color: White;
+  }
+
+
+  p {
+      color: maroon;
+      font-family: verdana;
+      font-size: 17px;
+  }
+
+
+  </style>
+
+  <SCRIPT LANGUAGE="JavaScript">
+  function readText (form) {
+      var x =form.inputbox.value;
+      var y = "";
+      for(i = (x.length)-1; i >= 0 ; i--){
+         y+= x[i];
+
+      }
+      alert (y);
+  }
+
+  </SCRIPT>
+
+
+<HEAD>
+  <img id="im" src="westmont.jpg" alt="Westmont" style="width:433px;height:100px;>
+<TITLE>Westmont Ministry Database  </TITLE>
+
+
+</HEAD>
+<BODY>
+  <FORM NAME="myform" ACTION="" METHOD="GET">
+
+  <p>Search for a participant by First or Last Name</p> <BR>
+  <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+  <INPUT TYPE="button" NAME="button1" Value="sumbit" onClick="readText(this.form)">
+
+  </FORM>
+
+  <FORM NAME="myform2" ACTION="" METHOD="GET">
+
+  <p>Search for participation in </p> <BR>
+    <input type="checkbox" name="localMin" value="BOL">Bread of Life<br>
+    <input type="checkbox" name="localMin" value="CC">Conversation Cafe<br>
+    <input type="checkbox" name="localMin" value="CC">East Side Kids Club<br>
+    <input type="checkbox" name="localMin" value="CC">Jesus Burgers<br>
+    <input type="checkbox" name="localMin" value="CC">TCAMP<br>
+  <INPUT TYPE="button" NAME="button2" Value="sumbit" onClick="readText(checkboxObject.value)">
+
+  </FORM>
+
+
+
+
+
+</BODY>
+</HTML>
